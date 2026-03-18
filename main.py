@@ -46,7 +46,9 @@ for cluster_id, cluster_sentences in clusters.items():
     for s in cluster_sentences:
         print("  -", s)
 
-new_sentence = "O sol está forte hoje"
+# Altere esta frase para testar em qual cluster sua sentença será classificada
+new_sentence = "Amanhã vai fazer frio"
+    
 new_embedding = modelo.encode([new_sentence])
 distances = np.linalg.norm(kmeans.cluster_centers_ - new_embedding, axis=1)
 closest_cluster = np.argmin(distances)
