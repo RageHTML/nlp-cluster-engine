@@ -12,7 +12,7 @@ O sistema utiliza embeddings pré-treinados para representar significado textual
 
 O sistema recebe um conjunto de sentenças, realiza o clustering semântico e identifica o grupo mais próximo para uma nova frase.
 
-![Execução do sistema](assets/demo.gif)
+![Execução do sistema](assets/Gif.gif)
 
 ## 🧠 Como Funciona
 
