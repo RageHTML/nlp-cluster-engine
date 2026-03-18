@@ -34,6 +34,6 @@ O pipeline segue as seguintes etapas:
 ## 🚀 Instalação
 
 ```bash
-git clone https://github.com/seu-usuario/nlp-cluster-engine.git
+git clone https://github.com/RageHTML/nlp-cluster-engine.git
 cd nlp-cluster-engine
 pip install -r requirements.txt
