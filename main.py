@@ -4,19 +4,33 @@ import numpy as np
 
 modelo = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
-
+# Adiciona mais setencas aqui (siga a sintaxa)
 setences = [
-    "Hoje esta chovendo",
-    "Amanha vai ser sol",
-    "Vou jogar mais tarde",
-    "Eu nao quero almocar",
-    "Estou com fome",
-    "Estou com muito sono",
-    "Agora eu vou dormir",
-    "Eu queria jogar mas tenho que estudar"
+    "Hoje está chovendo muito",
+    "O sol está forte hoje",
+    "Amanhã vai fazer frio",
+    "Eu vou viajar no fim de semana",
+    "Preciso estudar para a prova",
+    "Estou com muita fome agora",
+    "Vou preparar o almoço",
+    "Quero pedir comida pelo aplicativo",
+    "Estou com sono e quero dormir",
+    "Acordei muito cedo hoje",
+    "Vou jogar videogame mais tarde",
+    "Quero assistir um filme hoje à noite",
+    "Ele foi trabalhar cedo",
+    "Ela está estudando programação",
+    "Preciso terminar meu projeto",
+    "Vamos sair para caminhar",
+    "Estou me sentindo cansado",
+    "Quero aprender mais sobre inteligência artificial",
+    "Vou comprar pão na padaria",
+    "Estou organizando meus arquivos"
 ]
+
 embeddings = modelo.encode(setences)
 
+# num_cluster define a quantidade de cluster, nao coloque random state como 0
 num_cluster = 2
 kmeans = KMeans(n_clusters=num_cluster,random_state=1)
 kmeans.fit(embeddings)
