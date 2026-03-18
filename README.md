@@ -8,6 +8,12 @@ Este projeto implementa um pipeline de NLP capaz de agrupar frases com base em s
 
 O sistema utiliza embeddings pré-treinados para representar significado textual em formato numérico e aplica aprendizado não supervisionado para identificar padrões.
 
+## 🎬 Demonstração
+
+O sistema recebe um conjunto de sentenças, realiza o clustering semântico e identifica o grupo mais próximo para uma nova frase.
+
+![Execução do sistema](assets/demo.gif)
+
 ## 🧠 Como Funciona
 
 O pipeline segue as seguintes etapas:
