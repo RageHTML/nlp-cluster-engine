@@ -9,3 +9,4 @@ venv/
 models/
 *.bin
 *.pt
+assets/
